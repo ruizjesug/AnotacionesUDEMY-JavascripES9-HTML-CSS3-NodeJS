@@ -1,0 +1,36 @@
+body {
+    background-color: #eee;
+}
+
+/* En caso de que no tenga ninguno de los de abajo, sera este*/
+a {
+    color: hotpink;
+    background-color: #f00;
+    border-color: solid 1px #d00;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 4px;
+}
+
+/* Si no lo hemos visitado */
+a:link {
+    color: pink;
+    text-decoration: none;
+}
+
+/* Si ya lo visitamos tendra este */
+a:visited {
+    color: white;
+}
+
+/* Cuando colocamos el Mouse encima */
+a:hover {
+    color: white;
+    background-color: #f55;
+}
+
+/* Este lo tomara cuando pinchamos */
+a:active {
+    color: black;
+}
+

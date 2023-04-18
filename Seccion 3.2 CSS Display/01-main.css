@@ -1,0 +1,12 @@
+body {
+    background-color: #eee;
+}
+
+#invisible {
+    display: none;
+}
+
+span {
+    display: block;
+} /* hace que los inline dejen de ser Inlines y se conviertan en bloques ! */
+

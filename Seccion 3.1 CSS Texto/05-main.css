@@ -1,0 +1,29 @@
+body {
+    background-color: #eee;
+}
+
+table {
+    width: 100%; /* ancho de la tabla */
+    background-color: white;
+    border-collapse: collapse; /* encoger un poco la tabla */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}   /* Selector que nos permite seleccionar un cierto tipo de hijos (una si, una no)*/
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+} /* lineas en todos los bordes */
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left; /* cabeceras a la izquierda */
+    padding: top;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
