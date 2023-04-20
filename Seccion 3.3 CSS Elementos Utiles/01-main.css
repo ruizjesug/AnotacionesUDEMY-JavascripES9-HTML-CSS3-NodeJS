@@ -1,0 +1,38 @@
+body {
+    background-color: #eee;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* no queremos que se escape de los margenes */
+    position: fixed; /* position fija */
+    top: 0; /* para que se queden arriba */
+    left: 0; /* para que llegue completo el cuadrado de la barra de lado a lado */
+    width: 100%;
+    background-color: #333; /* borde oscuro de la barra */
+}
+
+li {
+    float: left; /* con esto lo llevamos arriba uno pegaditos a otros en la misma linea */
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px; /* entre uno y otro */
+    text-decoration: none; /* eliminar el subrayado */
+}
+li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+} /* sensacion de pinchado en la barra */
+
+.active {
+    background-color: #4caf50;
+} /* es un CLASS, con esto parecera que en la pagina donde estemos, esta seleccionada */
+
+.content {
+    margin-top: 55px;
+}

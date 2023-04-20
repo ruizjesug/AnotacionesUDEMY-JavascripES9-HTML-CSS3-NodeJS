@@ -1,0 +1,15 @@
+body {
+    background-color: #eee;
+}
+img {
+    float: right; /* esto hara que el texto empiece aparecer a la derecha */
+/* de esta manera indicamos si alguna imagen o elemento este al lado de un texto */
+    opacity: 0.5; /* indicando como de minimo 0 - 1 como maximo */
+}
+
+div p {
+    color: #f00;
+}
+img:hover {
+    opacity: 0.9;
+} /* EXCELENTE USO para hacer una sensacion de seleccion de la imagen */

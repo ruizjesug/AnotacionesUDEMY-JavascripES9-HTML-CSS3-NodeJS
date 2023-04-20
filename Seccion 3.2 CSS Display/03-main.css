@@ -1,3 +1,11 @@
 body {
     background-color: #eee;
 }
+
+#over {
+    width: 100px; /* ancho fijo */
+    height: 100px; /* alto fijo */
+/* como se nos esacapa del cuadrado, ahi es donde utilizamos
+overflow para que no se escape del orden que queremos */
+    overflow: scroll; /*existen: hidden, scroll, auto. */
+}
