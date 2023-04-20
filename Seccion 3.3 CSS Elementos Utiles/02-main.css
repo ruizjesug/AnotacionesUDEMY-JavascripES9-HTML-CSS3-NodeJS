@@ -2,37 +2,44 @@ body {
     background-color: #eee;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* no queremos que se escape de los margenes */
-    position: fixed; /* position fija */
-    top: 0; /* para que se queden arriba */
-    left: 0; /* para que llegue completo el cuadrado de la barra de lado a lado */
-    width: 100%;
-    background-color: #333; /* borde oscuro de la barra */
-}
 
-li {
-    float: left; /* con esto lo llevamos arriba uno pegaditos a otros en la misma linea */
-}
-
-li a {
-    display: block;
+.dropdown-btn {
+    background-color: #4CAF50;
     color: white;
-    text-align: center;
-    padding: 14px; /* entre uno y otro */
-    text-decoration: none; /* eliminar el subrayado */
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; /* nueva propiedad, aca cambia a la manito */
 }
-li:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-} /* sensacion de pinchado en la barra */
 
-.active {
-    background-color: #4caf50;
-} /* es un CLASS, con esto parecera que en la pagina donde estemos, esta seleccionada */
-
-.content {
-    margin-top: 55px;
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
+
+.dropdown-content {
+    display: none; /* oculta el menu */
+    position: absolute; 
+    background-color: #f9f9f9;
+    min-width: 160px; /* ancho minimo */
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.2); /* Sombra */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px; /* vertical, horizontal */
+    text-decoration: none; /* le sacamos la linea */
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-btn {
+    background-color: #3e8e41;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+} /* hara que se muestre cuandole coloquemos el mouse encima, porque arriba esta en NONE */
